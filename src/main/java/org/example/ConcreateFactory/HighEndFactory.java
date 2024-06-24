@@ -8,12 +8,12 @@ import org.example.ConcreateProduct.HighEndPhone;
 
 public class HighEndFactory extends ElectronicDeviceAbstractFactory {
     @Override
-    protected Phone getPhone(Phone phone) {
+    public Phone getPhone() {
         return new HighEndPhone();
     }
 
     @Override
-    protected Laptop getLaptop(Laptop laptop) {
+    public Laptop getLaptop() {
         return new HighEndLaptop();
     }
 }

@@ -9,12 +9,12 @@ import org.example.ConcreateProduct.MidRangePhone;
 public class MidRangeFactory extends ElectronicDeviceAbstractFactory {
 
     @Override
-    protected Phone getPhone(Phone phone) {
+    public Phone getPhone() {
         return new MidRangePhone();
     }
 
     @Override
-    protected Laptop getLaptop(Laptop laptop) {
+    public Laptop getLaptop() {
         return new MidRangeLaptop();
     }
 }
